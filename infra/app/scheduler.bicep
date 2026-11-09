@@ -10,7 +10,7 @@ resource scheduler 'Microsoft.DurableTask/schedulers@2025-11-01' = {
   location: location
   tags: tags
   properties: {
-    ipAllowlist: []
+    ipAllowlist: ['0.0.0.0/0']
     sku: {
       name: 'Consumption'
     }

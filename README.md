@@ -110,8 +110,10 @@ authorize payment notifications through a trusted provider; a function-key
 protected simulated payment endpoint is not a payment integration.
 
 The optional VNet setting privatizes host storage only. Scheduler access remains
-on its public authenticated endpoint. Resources and telemetry can incur charges;
-clean up with `azd down`.
+on its public authenticated endpoint. The scheduler IP allowlist permits all IPv4
+addresses; Microsoft Entra authentication and task hub RBAC remain required.
+Restrict the allowlist or use private networking for production. Resources and
+telemetry can incur charges; clean up with `azd down`.
 
 ## Development and limitations
 
