@@ -1,0 +1,9 @@
+# yaml-language-server: $schema=https://raw.githubusercontent.com/Azure/azure-dev/main/schemas/v1.0/azure.yaml.json
+name: durable-functions-order-processing-go
+metadata:
+  template: durable-functions-order-processing-go@1.0.0
+services:
+  api:
+    project: .
+    language: go
+    host: function
